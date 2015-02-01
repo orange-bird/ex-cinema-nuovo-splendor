@@ -593,26 +593,56 @@ p {
 
 #container {
     font-size: 16px;
-    line-height: 28px;
+    line-height: 32px;
+}
+
+#container .smaller {
+    font-size: 12px;
+    line-height: 24px;
 }
 
 #container h2 {
-    margin: 10px 5px;
-    padding: 5px 0;
-    color: #3c8dc5;
+    margin: 15px 5px;
+    padding: 5px;
     background: none;
     text-transform: uppercase;
-    -webkit-text-shadow: 0 1px 0 #e9f2f9;
-    text-shadow: 0 1px 0 #e9f2f9;
-    font-size: 16px;
+    font-size: 32px;
 }
 
 #container #just-space {
     height: 400px;
 }
 
+#container #just-background {
+    height: 400px;
+    margin: 10px 0;
+    background: url("../images/1_background.png") center no-repeat;
+}
+
 #container > p {
     margin: 20px 20px;
+}
+
+#container .big-text > p {
+    margin: 5px 10px;
+    font-size: 14px;
+    line-height: 28px;
+}
+
+#container .wrapped-images {
+    margin: 20px 20px;
+}
+
+#container .wrapped-images:after {
+    clear: right;
+    content: "";
+    display: table;
+}
+
+#container .wrapped-images .collection {
+    float: right;
+    margin-left: 10px;
+    min-width: 60%;
 }
 
 #container .wrapped-content {
@@ -630,12 +660,37 @@ p {
     margin-right: 10px;
 }
 
-#container .wrapped-content p {
+#container .wrapped-content p,
+#container .wrapped-content ul {
     margin-left: 0;
+}
+
+#container .wrapped-content ul {
+    display: table;
 }
 
 #container p img {
     margin-bottom: 15px;
+}
+
+.indent-50 {
+    margin-left: 50px;
+}
+
+.italic {
+    font-style: italic;
+}
+
+.bold {
+    font-weight: bold;
+}
+
+.center {
+    text-align: center;
+}
+
+ul.numeric {
+    list-style-type: decimal;
 }
 /*#endregion */
 /*#region Footer */
@@ -670,6 +725,46 @@ p {
     font-size: 32px;
     font-family: 'EntypoRegular';
     line-height: 16px;
+}
+/*#endregion */
+/*#region tables */
+
+table {
+    color: #666;
+    font-size: 12px;
+    background: #fff;
+    margin: 20px;
+    border: 1px solid #ccc;
+}
+
+table th {
+    padding: 5px 15px;
+    text-align: center;
+    background: #424242;
+    color: #fff;
+    text-transform: uppercase;
+}
+
+table tr {
+    text-align: left;
+}
+
+table tr.selected {
+    color: #d32f2f;
+    background: #ffcdd2;
+}
+
+table td {
+    padding: 5px 10px;
+    border-bottom: 1px solid #ccc;
+}
+
+table td.center {
+    text-align: center;
+}
+
+table tr:last-child td {
+    border-bottom: 0;
 }
 /*#endregion */
 /* icons */
