@@ -1,0 +1,172 @@
+/* --------------------------------
+Modules - reusable parts of our design
+-------------------------------- */
+
+.cd-container {
+    width: 90%;
+    max-width: 900px;
+    margin: 0 auto;
+    font-size: 12px;
+}
+
+.cd-container::after {
+    content: '';
+    display: table;
+    clear: both;
+}
+/* --------------------------------
+Main components
+-------------------------------- */
+
+#cd-timeline {
+    position: relative;
+    padding: 2em 0;
+    margin-top: 2em;
+    margin-bottom: 2em;
+}
+
+#cd-timeline::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 50%;
+    margin-left: -2px;
+    height: 100%;
+    width: 4px;
+    background: #727272;
+}
+
+.cd-timeline-block {
+    position: relative;
+    margin: 2em 0;
+}
+
+.cd-timeline-block:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.cd-timeline-block:first-child {
+    margin-top: 0;
+}
+
+.cd-timeline-block:last-child {
+    margin-bottom: 0;
+}
+
+.cd-timeline-img {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    width: 20px;
+    height: 20px;
+    margin-left: -10px;
+    border-radius: 50%;
+    box-shadow: 0 0 0 2px white, inset 0 2px 0 rgba(0, 0, 0, 0.08), 0 3px 0 4px rgba(0, 0, 0, 0.05);
+}
+
+.cd-timeline-img img {
+    display: block;
+    width: 12px;
+    height: 12px;
+    position: relative;
+    left: 50%;
+    top: 50%;
+    margin-left: -6px;
+    margin-top: -6px;
+}
+
+.cd-timeline-img {
+    background: #727272;
+}
+
+.cd-timeline-content {
+    position: relative;
+    margin-left: 0;
+    background: white;
+    border-radius: 0.25em;
+    padding: 2px 13px;
+    width: 45%;
+    box-shadow: 0 3px 0 #d7e4ed;
+}
+
+.cd-timeline-content:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.cd-timeline-content h5 {
+    color: #303e49;
+    margin: 10px 5px;
+}
+
+.cd-timeline-content p,
+.cd-timeline-content .cd-date {
+    font-size: 12px;
+}
+
+.cd-timeline-content img {
+    max-width: 200px;
+    max-height: 200px;
+}
+
+.cd-timeline-content .cd-date {
+    display: inline-block;
+}
+
+.cd-timeline-content p {
+    margin: 1em 0;
+    line-height: 1.6;
+}
+
+.cd-timeline-content .cd-date {
+    float: left;
+    padding: 0;
+    opacity: .7;
+    position: absolute;
+    width: 100%;
+    left: 112%;
+    top: 0;
+    font-size: 16px;
+}
+
+.cd-timeline-content::before {
+    content: '';
+    position: absolute;
+    top: 8px;
+    left: 100%;
+    right: 100%;
+    height: 0;
+    width: 0;
+    border: 3px solid transparent;
+    border-right: 3px solid white;
+    border-left-color: white;
+}
+
+.cd-timeline-block:nth-child(even) .cd-timeline-content {
+    float: right;
+}
+
+.cd-timeline-block:nth-child(even) .cd-timeline-content::before {
+    top: 8px;
+    left: auto;
+    right: 100%;
+    border-color: transparent;
+    border-right-color: white;
+}
+
+.cd-timeline-block:nth-child(even) .cd-timeline-content .cd-date {
+    left: auto;
+    right: 122%;
+    text-align: right;
+}
+
+.cssanimations .cd-timeline-content.is-hidden {
+    visibility: hidden;
+}
+
+.cssanimations .cd-timeline-content.bounce-in {
+    visibility: visible;
+}

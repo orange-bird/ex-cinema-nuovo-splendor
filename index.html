@@ -18,6 +18,7 @@
     <!--[if lt IE 9]>
     <link href="styles/style_ie.css" rel="stylesheet" type="text/css" />
     <![endif]-->
+    <link href="styles/index.css" rel="stylesheet" type="text/css" />
     <!--[if IE]>
     <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
     <![endif]-->
@@ -25,58 +26,94 @@
 
 <body id="index" class="home">
     <div id="header">
-        <h4>
-            Pietro Fenoglio
-        </h4>
-        <h1>Ex Cinema Nuovo Splendor</h1>
-        <p>
-            Via Roma 31-33
-        </p>
+        <a href="index.html"><img src="images/logo.png" alt="Ex Cinema Nuovo Splendor" />
+        </a>
     </div>
     <div id="menu">
         <ul id="nav">
-            <li id="nav1"><a href="#">via Roma</a>
+            <li id="nav-default"><a href="index.html" class="caps bold">Home</a>
+            </li>
+            <li id="nav2"><a href="index_2_isolato.html" class="caps bold">Isolato Sant'Antonio</a>
                 <ul>
-                    <li><a href="1_la_cartografia.html">La cartografia</a>
+                    <li><a href="2_sviluppo_storico.html">Sviluppo Storico</a>
                     </li>
-                    <li><a href="1_la_nuova_via_roma.html">La nuova via Roma</a>
-                    </li>
-                    <li><a href="1_modelazione_3d.html">Modelazione 3D</a>
+                    <li><a href="2_progetti.html">Progetti del quartiere</a>
                     </li>
                 </ul>
             </li>
-            <li id="nav2"><a href="#">Isolato Sant'Antonio</a>
+            <li id="nav3"><a href="index_3_cinema.html" class="caps bold">Cinema Splendor</a>
                 <ul>
-                    <li><a href="2_del_1866.html">del 1866</a>
+                    <li><a href="3_progetto_pietro.html">Progetto di Pietro Fenoglio</a>
                     </li>
-                    <li><a href="2_del_1926.html">del 1926</a>
+                    <li><a href="3_ingresso_del_cinema.html">L'ingresso del Cinema</a>
                     </li>
-                    <li><a href="2_del_1995.html">del 1995</a>
+                    <li><a href="3_progetto_edilizzi.html">Progetti Edilizzi</a>
                     </li>
-                    <li><a href="2_video_del_transformazione.html">Video del Transformazione</a>
+                    <li><a href="3_render_del_cinema.html">Render Del Cinema (Video)</a>
+                    </li>
+                    <li><a href="3_curiosita.html">Curiosità</a>
                     </li>
                 </ul>
             </li>
-            <li id="nav3"><a href="#">Cinema Splendor</a>
+            <li id="nav4"><a href="index_4_progetista.html" class="caps bold">Progetista</a>
                 <ul>
-                    <li><a href="3_materiali_storicci.html">Materiali storicci</a>
+                    <li><a href="4_pietro_fenoglio.html">Pietro Fenoglio</a>
                     </li>
-                    <li><a href="3_modelazione_3d.html">Modelazione 3D</a>
+                    <li><a href="4_opere.html">Le Opere</a>
                     </li>
                 </ul>
             </li>
-            <li id="nav4"><a href="#">Il Progetissta</a>
+            <li id="nav5"><a href="index_5_fonti.html" class="caps bold">Fonti</a>
                 <ul>
-                    <li><a href="4_bibliografia.html">Bibliografia</a>
+                    <li><a href="5_immagini_attuale.html">Immagini di via Roma attuale</a>
                     </li>
-                    <li><a href="4_opere.html">Opere</a>
+                    <li><a href="5_render_attuale.html">Render di via Roma attuale</a>
                     </li>
                 </ul>
+            </li>
+            <li id="nav-default"><a href="mappa.html" class="caps bold">Mappa del Sito</a>
             </li>
         </ul>
     </div>
     <div id="container" role="main">
-        <div id="just-background"></div>
+        <section class="work">
+            <figure class="nav2 padding-2">
+                <a href="index_2_isolato.html">
+                    <img src="images/main_2.png" alt="" />
+                    <dl>
+                        <dt>Isolato Sant'Antonio</dt>
+                        <dd></dd>
+                    </dl>
+                </a>
+            </figure>
+            <figure class="nav3 padding-3">
+                <a href="index_3_cinema.html">
+                    <img src="images/main_3.png" alt="" />
+                    <dl>
+                        <dt>Cinema Splendor</dt>
+                        <dd></dd>
+                    </dl>
+                </a>
+            </figure>
+            <figure class="nav4 padding-4">
+                <a href="index_4_progetista.html">
+                    <img src="images/main_4.png" alt="" />
+                    <dl>
+                        <dt>Progetista</dt>
+                        <dd></dd>
+                    </dl>
+                </a>
+            </figure>
+            <figure class="nav5 padding-5">
+                <a href="index_5_fonti.html">
+                    <img src="images/main_5.png" alt="" />
+                    <dl>
+                        <dt>Fonti</dt>
+                        <dd></dd>
+                    </dl>
+                </a>
+            </figure>
+        </section>
     </div>
     <div id="footer">
         <p id="local">
@@ -92,6 +129,39 @@
     </div>
     <!-- main js -->
     <script src="scripts/jquery-1.8.3.js"></script>
+    <script src="scripts/work.js"></script>
+    <script>
+        $(document).ready(function () {
+            $('#nav2 ul li a').hover(function () {
+                    $('#nav2 > a').addClass('selected');
+                },
+                function () {
+                    $('#nav2 > a').removeClass('selected');
+                }
+            );
+            $('#nav3 ul li a').hover(function () {
+                    $('#nav3 > a').addClass('selected');
+                },
+                function () {
+                    $('#nav3 > a').removeClass('selected');
+                }
+            );
+            $('#nav4 ul li a').hover(function () {
+                    $('#nav4 > a').addClass('selected');
+                },
+                function () {
+                    $('#nav4 > a').removeClass('selected');
+                }
+            );
+            $('#nav5 ul li a').hover(function () {
+                    $('#nav5 > a').addClass('selected');
+                },
+                function () {
+                    $('#nav5 > a').removeClass('selected');
+                }
+            );
+        })
+    </script>
 </body>
 
 </html>
