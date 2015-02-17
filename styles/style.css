@@ -697,6 +697,33 @@ p {
     min-width: 60%;
 }
 
+#container .wrapped-images-fixed {
+    margin: 20px 20px;
+    padding: 10px;
+    background-color: #fff;
+    color: #555;
+    font-size: 13px;
+}
+
+#container .wrapped-images-fixed:after {
+    clear: right;
+    content: "";
+    display: table;
+}
+
+#container .wrapped-images-fixed .collection {
+    float: right;
+    margin-left: 10px;
+    min-width: 60%;
+    max-width: 80%;
+}
+
+#container .wrapped-images-fixed .collection img {
+    height: 120px;
+    max-width: auto;
+    padding: 0 1px;
+}
+
 #container .wrapped-content {
     margin: 20px 20px;
 }
@@ -778,8 +805,8 @@ ul.numeric {
 
 #footer #authors {
     margin: 10px auto;
-    padding: 10px 20px;
-    height: 30px;
+    padding: 10px 20px 5px 20px;
+    height: 20px;
     color: #212121;
     background: #f5f5f5;
     text-align: right;
