@@ -1,0 +1,25 @@
+div.floating-video div.left {
+    float: left;
+    padding: 10px 10px 10px 0;
+}
+
+div.floating-video div.right {
+    float: left;
+    padding: 10px 0 10px 10px;
+}
+
+div.floating-video div img {
+    width: 460px;
+    height: 300px;
+}
+
+div.floating-video div .youtube {
+    width: 460px;
+    height: 300px;
+}
+
+div.floating-video div p {
+    margin: 2px 0;
+    font-size: 14px;
+    max-width: 320px;
+}

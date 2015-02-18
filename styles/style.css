@@ -425,7 +425,6 @@ h6 {
 
 h6 {
     font-size: 14px;
-    border-bottom: 1px solid #6fb7e9;
     padding: 0 0 5px 0;
 }
 
@@ -630,6 +629,11 @@ p {
     background: #388e3c;
 }
 
+#index .nav-default-color {
+    color: #fff;
+    background: #616161;
+}
+
 #container {
     font-size: 16px;
     line-height: 24px;
@@ -786,7 +790,59 @@ p {
 ul.numeric {
     list-style-type: decimal;
 }
+
+ul.map {
+    margin: 25px 0;
+}
+
+ul.map,
+ul.map ul,
+ul.map ul ul {
+    list-style: none;
+    list-style-image: none;
+    margin-top: 0;
+    margin-bottom: 0;
+    padding-top: 5px;
+}
+
+ul.map li {
+    padding-bottom: 5px;
+    padding-top: 5px;
+}
+
+h6.map {
+    font-size: 16px;
+}
 /*#endregion */
+
+ul.lined li {
+    position: relative;
+}
+
+ul.lined li:after {
+    font-size: 14px;
+    content: "\2014";
+    position: absolute;
+    left: -17px;
+    top: 0;
+}
+
+ul.lined li:before {
+    content: "";
+    position: absolute;
+    left: -16px;
+    border-left: 1px solid black;
+    height: 100%;
+    width: 1px;
+}
+
+ul.lined li:first-child:before {
+    /*top: -10px;*/
+}
+
+ul.lined li:last-child:before {
+    height: 6px;
+}
 /*#region Footer */
 
 #footer {
@@ -828,7 +884,7 @@ table {
     color: #666;
     font-size: 12px;
     background: #fff;
-    margin: 20px;
+    margin: 5px 0;
     border: 1px solid #ccc;
 }
 
@@ -860,6 +916,31 @@ table td.center {
 
 table tr:last-child td {
     border-bottom: 0;
+}
+
+table.described-images {
+    border: 0;
+    background: none;
+    font-size: 24px;
+    width: 100%;
+}
+
+table.described-images td {
+    padding: 15px 25px;
+    border: 0;
+}
+
+table.described-images td img {
+    width: 200px;
+    height: auto;
+}
+
+table.described-images td:first-child {
+    padding-top: 50px;
+}
+
+table.described-images td:last-child {
+    width: 40%;
 }
 /*#endregion */
 /* icons */
@@ -897,6 +978,14 @@ table tr:last-child td {
 /* Import IE hacks */
 /*@import "style_ie.css" screen;*/
 /*#region non-semantic helper classes */
+
+.float-right {
+    float: right;
+}
+
+.float-right img {
+    margin: 10px;
+}
 /* For image replacement */
 
 .ir {
