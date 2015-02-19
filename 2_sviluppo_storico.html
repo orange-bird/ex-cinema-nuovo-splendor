@@ -161,6 +161,19 @@
                 </a>
             </li>
         </ul>
+
+        <div class="video-player">
+            <video width="320" height="240" controls autoplay>
+                <source src="video/video1.mov" type="video/mp4" />
+                <!--<source src="http://clips.vorwaerts-gmbh.de/VfE.webm" type="video/webm" />-->
+                <!--<source src="http://clips.vorwaerts-gmbh.de/VfE.ogv" type="video/ogg" />-->
+                <object width="320" height="240" type="application/x-shockwave-flash" data="player.swf">
+                    <param name="movie" value="vide/player.swf" />
+                    <param name="flashvars" value="autostart=true&amp;controlbar=over&amp;image=poster.jpg&amp;file=video/video1.mov" />
+                    <img src="video/poster.png" width="320" height="240" alt="Video" title="No video playback capabilities" />
+                </object>
+            </video>
+        </div>
     </div>
     <div id="footer">
         <p id="local">

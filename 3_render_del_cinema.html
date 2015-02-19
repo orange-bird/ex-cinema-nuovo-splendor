@@ -82,7 +82,16 @@
     <h3 class="nav3-color">Render del Cinema</h3>
     <div id="container" role="main">
         <div class="video-player">
-
+            <video width="320" height="240" controls autoplay loop>
+                <source src="video/video2.mov" type="video/mp4" />
+                <!--<source src="http://clips.vorwaerts-gmbh.de/VfE.webm" type="video/webm" />-->
+                <!--<source src="http://clips.vorwaerts-gmbh.de/VfE.ogv" type="video/ogg" />-->
+                <object width="320" height="240" type="application/x-shockwave-flash" data="player.swf">
+                    <param name="movie" value="vide/player.swf" />
+                    <param name="flashvars" value="autostart=true&amp;controlbar=over&amp;image=poster.jpg&amp;file=video/video2.mov" />
+                    <img src="video/poster.png" width="320" height="240" alt="Video" title="No video playback capabilities" />
+                </object>
+            </video>
         </div>
         <div class="basic-images condensed">
             <a href="images/3/4-render-del-cinema/interno3-2.png" data-lightbox="images"><img src="images/3/4-render-del-cinema/preview/interno3-2.png" alt="" />
