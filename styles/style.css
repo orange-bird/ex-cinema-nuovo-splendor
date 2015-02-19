@@ -930,6 +930,11 @@ table.described-images td {
     border: 0;
 }
 
+table.described-images td.spanned {
+    padding: 5px 25px;
+    border: 0;
+}
+
 table.described-images td img {
     width: 200px;
     height: auto;
@@ -937,6 +942,10 @@ table.described-images td img {
 
 table.described-images td:first-child {
     padding-top: 50px;
+}
+
+table.described-images td.spanned:first-child {
+    padding-top: 10px;
 }
 
 table.described-images td:last-child {
