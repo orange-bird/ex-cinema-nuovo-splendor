@@ -1,10 +1,10 @@
 .work {
-    margin: 20px 0;
+    margin: 20px;
 }
 
 .work figure {
     float: left;
-    margin: 20px;
+    margin: 20px 25px;
     width: 175px;
     background: #b6b6b6;
     line-height: 200px;
@@ -119,49 +119,4 @@
 
 .not-current:hover dl {
     opacity: 0 !important;
-}
-/* Media Queries */
-
-@media only screen and (max-width: 965px) {
-    .work figure {
-        width: 170px;
-        height: 170px;
-    }
-}
-
-@media only screen and (max-width: 860px) {
-    .work figure {
-        width: 200px;
-        height: 200px;
-    }
-}
-
-@media only screen and (max-width: 740px) {
-    .work figure {
-        width: 160px;
-        height: 160px;
-    }
-    .not-current {
-        opacity: 0.5;
-    }
-}
-
-@media only screen and (max-width: 610px) {
-    .work figure {
-        margin-left: 40px;
-        margin-bottom: 60px;
-    }
-    .work figure dl {
-        height: 40px;
-        top: 200px;
-        bottom: 0px;
-    }
-}
-
-@media only screen and (max-width: 480px) {
-    .work figure {
-        width: 200px;
-        height: 200px;
-        margin: 20px 60px;
-    }
 }
