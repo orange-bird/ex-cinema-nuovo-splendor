@@ -880,7 +880,7 @@ ul.lined li:last-child:before {
 /*#endregion */
 /*#region tables */
 
-table {
+table.long-list {
     color: #666;
     font-size: 12px;
     background: #fff;
@@ -888,7 +888,7 @@ table {
     border: 1px solid #ccc;
 }
 
-table th {
+table.long-list th {
     padding: 5px 15px;
     text-align: center;
     background: #424242;
@@ -896,25 +896,25 @@ table th {
     text-transform: uppercase;
 }
 
-table tr {
+table.long-list tr {
     text-align: left;
 }
 
-table tr.selected {
+table.long-list tr.selected {
     color: #d32f2f;
     background: #ffcdd2;
 }
 
-table td {
+table.long-list td {
     padding: 5px 10px;
     border-bottom: 1px solid #ccc;
 }
 
-table td.center {
+table.long-list td.center {
     text-align: center;
 }
 
-table tr:last-child td {
+table.long-list tr:last-child td {
     border-bottom: 0;
 }
 
@@ -941,6 +941,98 @@ table.described-images td:first-child {
 
 table.described-images td:last-child {
     width: 40%;
+}
+
+table.description-links {
+    border: none;
+    font-size: 18px;
+    margin: 5px 0;
+    width: 100%;
+}
+
+table.description-links td {
+    background-color: #b6b6b6;
+    border: 10px solid #e4e4e4;
+    padding: 10px;
+    margin: 10px;
+}
+
+table.description-links td:first-child {
+    color: #fff;
+    border-left-width: 0;
+    border-right-width: 20px;
+}
+
+table.description-links td:last-child {
+    color: #111;
+    border-left-width: 20px;
+    border-right-width: 0;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+table.description-links td span.small-text {
+    font-size: 14px;
+}
+
+table.basic {
+    margin: 20px 10px;
+    font-size: 14px;
+}
+
+table.basic td {
+    padding: 5px 15px;
+}
+
+table.basic td p {
+    margin: 0;
+    padding: 0;
+}
+
+table.basic td.left-empty {
+    padding: 20px 20px;
+    width: 200px;
+    height: 200px;
+    color: #fff;
+    background-color: #b6b6b6;
+    text-align: center;
+    vertical-align: middle;
+    font-size: 26px;
+    line-height: 40px;
+    font-weight: lighter;
+}
+
+div.basic-images {
+    text-align: left;
+}
+
+div.basic-images img {
+    margin: 10px 30px;
+}
+
+div.basic-images.condensed img {
+    margin: 10px 4px;
+    width: 145px;
+    height: auto;
+}
+
+div.basic-images.condensed img:last-child {
+    margin-right: 0;
+}
+
+div.full-images {
+    text-align: center;
+    width: 90%
+}
+
+div.full-images img {
+    margin: 10px auto;
+    max-width: 80%;
+    height: auto;
+}
+
+div.video-player {
+    text-align: center;
 }
 /*#endregion */
 /* icons */
@@ -978,6 +1070,10 @@ table.described-images td:last-child {
 /* Import IE hacks */
 /*@import "style_ie.css" screen;*/
 /*#region non-semantic helper classes */
+
+.float-left {
+    float: left;
+}
 
 .float-right {
     float: right;
