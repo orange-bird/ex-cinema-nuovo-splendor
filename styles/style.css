@@ -743,6 +743,15 @@ p {
     margin-right: 10px;
 }
 
+#container .wrapped-content div.images-group {
+    float: left;
+    margin-right: 10px;
+}
+
+#container .wrapped-content div.images-group img {
+    margin-bottom: 15px;
+}
+
 #container .wrapped-content img.width-250 {
     width: 240px;
     margin-left: 20px;
