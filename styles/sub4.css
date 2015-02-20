@@ -1,0 +1,20 @@
+div.floating-pic div.left {
+    float: left;
+    padding: 10px 10px 10px 0;
+}
+
+div.floating-pic div.right {
+    float: left;
+    padding: 10px 0 10px 10px;
+}
+
+div.floating-pic div img {
+    width: 450px;
+    height: auto;
+}
+
+div.floating-pic div p {
+    margin: 2px 0;
+    font-size: 14px;
+    max-width: 320px;
+}
