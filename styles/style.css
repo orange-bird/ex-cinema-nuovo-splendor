@@ -1096,6 +1096,30 @@ table.basic {
     font-size: 14px;
 }
 
+table.basic.white {
+    background: #fff;
+    width: 100%;
+    text-align: center;
+}
+
+table.basic .smaller-text {
+    font-size: 10px;
+    margin-left: 90px;
+}
+
+table.basic .align-right {
+    text-align: right;
+    margin-right: 90px;
+}
+
+table.basic td.top {
+    padding-top: 50px;
+}
+
+table.basic p {
+    text-align: justify;
+}
+
 table.basic td {
     padding: 5px 15px;
 }
