@@ -833,6 +833,24 @@ ul.columns-2 li a {
     display: inline-block;
 }
 
+ul.columns-3 {
+    columns: 3;
+    -webkit-columns: 3;
+    -moz-columns: 3;
+}
+
+ul.columns-3.centered {
+    margin: 5px 50px;
+}
+
+ul.columns-3 li {
+    margin-top: 10px;
+}
+
+ul.columns-3 li a {
+    display: inline-block;
+}
+
 .center {
     text-align: center;
 }
