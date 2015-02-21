@@ -4,8 +4,8 @@
 
 .work figure {
     float: left;
-    margin: 20px 25px;
-    width: 175px;
+    margin: 20px 20px;
+    width: 185px;
     background: #b6b6b6;
     line-height: 200px;
     -webkit-filter: sepia(0.4);
@@ -18,7 +18,7 @@
     -o-transition: 0.6s;
     -ms-transition: 0.6s;
 }
-
+/*
 .work figure.nav2 {
     margin-top: 20px;
 }
@@ -34,6 +34,7 @@
 .work figure.nav5 {
     margin-top: 0;
 }
+*/
 
 .work figure a img {
     height: 100%;
