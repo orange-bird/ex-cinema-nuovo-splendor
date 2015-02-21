@@ -776,6 +776,10 @@ p {
     margin-bottom: 15px;
 }
 
+h5.multiline {
+    line-height: 1.7;
+}
+
 .indent-50 {
     margin-left: 50px;
 }
@@ -1093,9 +1097,22 @@ table.project-details td {
     padding: 5px 15px;
 }
 
+table.project-details.timeline-details td:first-child {
+    width: 30%;
+}
+
 table.project-details img {
     max-width: 400px;
     max-height: 400px;
+}
+
+table.project-details.timeline-details img {
+    margin-right: 10px;
+}
+
+table.project-details img.long {
+    max-width: 600px;
+    max-height: 250px;
 }
 
 table.project-details img.four {
