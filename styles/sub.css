@@ -44,6 +44,14 @@
     padding: 75px 20px 0 20px;
 }
 
+.work figure.black dl {
+    color: #111;
+}
+
+.work figure.black img {
+    opacity: 0.5;
+}
+
 .work figure dl dt {
     text-transform: uppercase;
     font-size: 16px;
