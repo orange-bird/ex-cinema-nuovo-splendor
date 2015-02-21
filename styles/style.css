@@ -851,6 +851,23 @@ ul.columns-3 li a {
     display: inline-block;
 }
 
+ul.references,
+ul.references ul {
+    list-style-type: none;
+    margin: 10px 0 20px 0;
+}
+
+ul.references li:before {
+    content: "\2014";
+    position: relative;
+    left: -5px;
+}
+
+ul.references li {
+    text-indent: -5px;
+    margin: 5px 0;
+}
+
 .center {
     text-align: center;
 }
