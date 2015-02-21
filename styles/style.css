@@ -785,6 +785,58 @@ p {
     margin-right: 30px;
 }
 
+.img-map {
+    width: 750px;
+    heigth: auto;
+    margin: 5px auto;
+}
+
+.img-map a,
+.img-map img {
+    -webkit-transition: all 1s ease;
+    -moz-transition: all 1s ease;
+    -o-transition: all 1s ease;
+    transition: all 1s ease;
+}
+
+.img-map-overlay-wrapper {
+    position: relative;
+}
+
+.img-map-overlay {
+    position: absolute;
+    left: 0;
+    top: 0;
+    z-index: 5;
+}
+
+.img-map-description {
+    font-size: 12px;
+    text-align: center;
+}
+
+ul.columns-2 {
+    columns: 2;
+    -webkit-columns: 2;
+    -moz-columns: 2;
+}
+
+ul.columns-2.centered {
+    margin: 5px 50px;
+}
+
+ul.columns-2 li {
+    margin-top: 10px;
+}
+
+ul.columns-2 li a {
+    display: inline-block;
+}
+
+.center {
+    text-align: center;
+}
+
 .italic {
     font-style: italic;
 }
@@ -996,6 +1048,29 @@ table.description-links td:last-child {
 
 table.description-links td span.small-text {
     font-size: 14px;
+}
+
+table .smaller-text {
+    font-size: 12px;
+}
+
+table.project-details td {
+    padding: 5px 15px;
+}
+
+table.project-details img {
+    max-width: 400px;
+    max-height: 400px;
+}
+
+table.project-details img.four {
+    max-width: 250px;
+    max-height: 250px;
+}
+
+table.project-details img.four-x {
+    max-width: 200px;
+    max-height: 250px;
 }
 
 table.basic {
