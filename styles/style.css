@@ -688,6 +688,7 @@ p {
     margin: 5px 10px;
     font-size: 14px;
     line-height: 28px;
+    text-align: justify;
 }
 
 #container .wrapped-images {
