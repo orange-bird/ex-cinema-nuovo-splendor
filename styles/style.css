@@ -1191,6 +1191,12 @@ div.basic-images.condensed img {
     height: auto;
 }
 
+div.basic-images.condensed-x img {
+    margin: 10px 4px;
+    width: 218px;
+    height: auto;
+}
+
 div.basic-images.condensed img:last-child {
     margin-right: 0;
 }
