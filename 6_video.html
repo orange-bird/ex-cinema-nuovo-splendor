@@ -101,19 +101,49 @@
                 <p>Architetto: Pietro Fenoglio</p>
             </div>
             <div class="right">
-                <div id="ytplayer" class="youtube"></div>
+                <!--<div id="ytplayer" class="youtube"></div>-->
+                <video width="640" height="360" controls loop>
+                    <source src="video/youtube-pf.mp4" type="video/mp4" />
+                    <source src="video/youtube-pf.webm" type="video/webm" />
+                    <!--<source src="video/youtube-pf.ogv" type="video/ogg" />-->
+                    <object width="640" height="360" type="application/x-shockwave-flash" data="player.swf">
+                        <param name="movie" value="video/player.swf" />
+                        <param name="flashvars" value="autostart=true&amp;controlbar=over&amp;image=poster.png&amp;file=video/youtube-pf.mp4" />
+                        <img src="video/poster.png" width="640" height="360" alt="Video" title="No video playback capabilities" />
+                    </object>
+                </video>
                 <p>Pietro Fenoglio, architect</p>
                 <p>Caricato il 12 lug 2009</p>
                 <p>FRANCIS C.</p>
             </div>
             <div class="left">
-                <div id="ytplayer2" class="youtube"></div>
+                <!--<div id="ytplayer2" class="youtube"></div>-->
+                <video width="640" height="360" controls loop>
+                    <source src="video/youtube-50.mp4" type="video/mp4" />
+                    <source src="video/youtube-50.webm" type="video/webm" />
+                    <!--<source src="video/youtube-50.ogv" type="video/ogg" />-->
+                    <object width="640" height="360" type="application/x-shockwave-flash" data="player.swf">
+                        <param name="movie" value="video/player.swf" />
+                        <param name="flashvars" value="autostart=true&amp;controlbar=over&amp;image=poster.png&amp;file=video/youtube-50.mp4" />
+                        <img src="video/poster.png" width="640" height="360" alt="Video" title="No video playback capabilities" />
+                    </object>
+                </video>
                 <p>50 REASONS TO LOVE TURIN &nbsp; Casa dell'Obelisco e villano Scott di Pietro Fenoglio</p>
                 <p>Pubblicato il 23 dic 2014</p>
                 <p>NIK CHANNEL</p>
             </div>
             <div class="right">
-                <div id="ytplayer3" class="youtube"></div>
+                <!--<div id="ytplayer3" class="youtube"></div>-->
+                <video width="640" height="360" controls loop>
+                    <source src="video/youtube-la.mp4" type="video/mp4" />
+                    <source src="video/youtube-la.webm" type="video/webm" />
+                    <!--<source src="video/youtube-la.ogv" type="video/ogg" />-->
+                    <object width="640" height="360" type="application/x-shockwave-flash" data="player.swf">
+                        <param name="movie" value="video/player.swf" />
+                        <param name="flashvars" value="autostart=true&amp;controlbar=over&amp;image=poster.png&amp;file=video/youtube-la.mp4" />
+                        <img src="video/poster.png" width="640" height="360" alt="Video" title="No video playback capabilities" />
+                    </object>
+                </video>
                 <p>Conosci Torino? - CASA FENOGLIO LA FLEUR</p>
                 <p>Pubblicato il 24 ago 2014</p>
                 <p>FREDICALCIO</p>
@@ -135,6 +165,7 @@
     </div>
     <!-- main js -->
     <script src="scripts/jquery-1.11.0.min.js"></script>
+    <!--
     <script>
         // Load the IFrame Player API code asynchronously.
         var tag = document.createElement('script');
@@ -178,6 +209,7 @@
             });
         }
     </script>
+-->
 </body>
 
 </html>
